@@ -1,3 +1,4 @@
+# Ejercicio 13
 frase = input("Ingresa una frase: ")
 
 print(frase[:10])                    # Primeros 10 caracteres

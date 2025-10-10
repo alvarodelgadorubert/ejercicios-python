@@ -1,3 +1,4 @@
+# Ejercicio 16
 frase = input("Escribe una frase: ")
 
 # Reemplazar vocales con asteriscos

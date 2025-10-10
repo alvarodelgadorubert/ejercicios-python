@@ -1,3 +1,4 @@
+# Ejercicio 2
 nombre = input("Ingresa tu nombre: ")
 apellido = input("Ingresa tu apellido: ")
 ciudad = input("Ingresa tu ciudad de nacimiento: ")

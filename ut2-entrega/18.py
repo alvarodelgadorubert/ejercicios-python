@@ -1,3 +1,4 @@
+# Ejercicio 18
 entrada = input("Ingresa un número: ")
 es_numerico = entrada.isnumeric()
 

@@ -1,3 +1,4 @@
+# Ejercicio 20
 caracter = input("Escribe un carácter: ")
 valor_unicode = ord(caracter)
 

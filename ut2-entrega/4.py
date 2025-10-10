@@ -1,3 +1,4 @@
+# Ejercicio 4
 frase = "Python es genial"
 
 print(frase[0])      # Primer carácter

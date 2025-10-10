@@ -1,3 +1,4 @@
+# Ejercicio 19
 oracion = input("Escribe una oración: ")
 palabra = input("Escribe una palabra: ")
 

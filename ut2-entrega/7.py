@@ -1,3 +1,4 @@
+# Ejercicio 7
 frase = input("Escribe una frase: ")
 
 print(frase[:5])                          # Primeros 5 caracteres
