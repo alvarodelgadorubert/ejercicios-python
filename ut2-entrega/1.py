@@ -1,10 +1,11 @@
-# Ejercicio 1
-cadena1 = 'Cadena con comillas simples'
-cadena2 = "Cadena con comillas dobles"
-cadena3 = """Cadena con comillas triples
-que puede tener
-varias líneas"""
+# Texto original
+hostname_original = '   pc -- aula -  07  \n'
 
-print(cadena1)
-print(cadena2)
-print(cadena3)
+# Proceso de normalización
+# 1. strip() -> Elimina espacios y saltos de línea en los bordes.
+# 2. replace() -> Reemplaza los separadores por un guion.
+# 3. upper() -> Convierte todo a mayúsculas.
+hostname_normalizado = hostname_original.strip().replace(' -- ', '-').replace(' -  ', '-').upper()
+
+# Impresión del resultado
+print(hostname_normalizado)
