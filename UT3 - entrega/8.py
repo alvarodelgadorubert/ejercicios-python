@@ -13,7 +13,7 @@ if not ruta_archivo.exists() or not ruta_archivo.is_file():
     sys.exit()
 
 info_archivo = ruta_archivo.stat()
-tamano_bytes = info_archivo.st_size
+tamano_bytes = info_archivo.st_size 
 
 if tamano_bytes >= UN_MB:
     print("GRANDE")
