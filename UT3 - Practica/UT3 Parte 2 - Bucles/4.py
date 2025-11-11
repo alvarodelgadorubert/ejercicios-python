@@ -1,5 +1,7 @@
+print("Hola")
+
 while True:
-    caracter = input()
+    caracter = input("Dame un caracter: ")
 
     if caracter == ' ':
         break 
