@@ -17,4 +17,4 @@ elif so == "macOS (Darwin)":
 else:
     gestor_recomendado = "gestor no definido"
 
-print(gestor_recomendado)
+print("Tu gestor definido es:", gestor_recomendado)
