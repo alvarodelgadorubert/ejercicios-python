@@ -6,8 +6,7 @@ archivo_ejemplo = Path("config.example.ini")
 
 if archivo_config.exists():
     print("Config existente")
-else:
-    if archivo_ejemplo.exists():
+elif archivo_ejemplo.exists():
         shutil.copy(archivo_ejemplo, archivo_config)
-    else:
+else:
         print("Falta el archivo de ejemplo")
