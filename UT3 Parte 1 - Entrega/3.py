@@ -14,7 +14,7 @@ if so == "Windows":
     gestor_recomendado = "winget"
 elif so == "Linux":
     gestor_recomendado = "apt"
-elif so == "Darwin":
+elif so == "macOS Darwin":
     gestor_recomendado = "brew"
 
 print(gestor_recomendado)
