@@ -1,61 +1,90 @@
 import modulo_alvaro
 
-print("--- Condicionales ---")
+# --- PRUEBAS DE FUNCIONES CONDICIONALES ---
+print("--- PRUEBAS DE CONDICIONALES ---")
 
-print("Ejercicio 1")
+# Ejercicio 1: mayor(n1, n2)
+print(f"Mayor entre 15 y 8: {modulo_alvaro.mayor(15, 8)}")
+print(f"Mayor entre 5 y 10: {modulo_alvaro.mayor(5, 10)}")
 
-print("El número 10 es mayor que el 5", modulo_alvaro.mayor(10, 5))
-print("El número 20 es mayor que el 10:", modulo_alvaro.mayor(10, 20))
+# Ejercicio 3: es_par(n)
+print(f"¿Es 42 par? {modulo_alvaro.es_par(42)}")
+print(f"¿Es 33 par? {modulo_alvaro.es_par(33)}")
 
-print("Ejercicio 3")
+# Ejercicio 6: es_mayusculas(cad)
+print(f"¿'HOLA' en mayúsculas? {modulo_alvaro.es_mayusculas('HOLA')}")
+print(f"¿'Hola' en mayúsculas? {modulo_alvaro.es_mayusculas('Hola')}")
 
-print("El número 4 es par", modulo_alvaro.es_par(4))
-print("El número 7 no es par:", modulo_alvaro.es_par(7))
+# Ejercicio 7: potencia(base, exp)
+print(f"Potencia (2, 4): {modulo_alvaro.potencia(2, 4)}")
+print(f"Potencia (5, 0): {modulo_alvaro.potencia(5, 0)}")
+print(f"Potencia (2, -3): {modulo_alvaro.potencia(2, -3)}")
 
-print("Ejercicio 6")
+# Ejercicio 9: ordena_mayor_menor(n1, n2, n3)
+print(f"Ordenar (10, 5, 12): {modulo_alvaro.ordena_mayor_menor(10, 5, 12)}")
 
-print("'HOLA' está en mayúsculas", modulo_alvaro.es_mayusculas("HOLA"))
-print("'Hola' no está en mayúsculas", modulo_alvaro.es_mayusculas("Hola"))
+# Ejercicio 10: clasifica_circunferencias(...) (Imprime)
+print("Clasificación de circunferencias (Secantes):")
+modulo_alvaro.clasifica_circunferencias(0, 0, 5, 7, 0, 3) # Distancia 7, Suma 8, Resta 2
+print("Clasificación de circunferencias (Exteriores):")
+modulo_alvaro.clasifica_circunferencias(0, 0, 2, 10, 0, 3) # Distancia 10, Suma 5
 
-print("Ejercicio 18")
+# Ejercicio 11: clasifica_triangulo(a, b, c) (Imprime)
+print("Clasificación de triángulo (Equilátero):")
+modulo_alvaro.clasifica_triangulo(5, 5, 5)
 
-print("Día Escrito (3):", modulo_alvaro.dia_escrito(3))
-print("Día Escrito (7):", modulo_alvaro.dia_escrito(7))
-print("Día Escrito (8):", modulo_alvaro.dia_escrito(8))
+# Ejercicio 12: es_bisiesto(anyo)
+print(f"¿Es 2024 bisiesto? {modulo_alvaro.es_bisiesto(2024)}")
+print(f"¿Es 1900 bisiesto? {modulo_alvaro.es_bisiesto(1900)}")
 
-print("Ejercicio 19")
+# Ejercicio 13: es_fecha_correcta(dia, mes, anyo)
+print(f"¿Es 31/01/2024 correcta? {modulo_alvaro.es_fecha_correcta(31, 1, 2024)}")
+print(f"¿Es 30/02/2024 correcta? {modulo_alvaro.es_fecha_correcta(30, 2, 2024)}")
 
-print("Días del Mes (2, 4, 1):")
-print(modulo_alvaro.num_dias_mes(2))
-print(modulo_alvaro.num_dias_mes(4))
-print(modulo_alvaro.num_dias_mes(1))
+# Ejercicio 14: calcula_ganancias_uva(...)
+print(f"Ganancias Uva A, T1 (10kg a 5€/kg): {modulo_alvaro.calcula_ganancias_uva(5, 10, 'A', 1):.2f}€")
 
-print("Ejercicio 16")
+# Ejercicio 15: costes_viaje(n)
+coste_alumno, coste_total = modulo_alvaro.costes_viaje(60)
+print(f"Costes Viaje (60 alumnos): Coste/Alumno={coste_alumno:.2f}€, Coste Total={coste_total:.2f}€")
 
-print("Coste Llamada (Tipo 1, 10 min):", modulo_alvaro.calcula_coste_llamada(1, 10))
-print("Coste Llamada (Tipo 3, 20 min):", modulo_alvaro.calcula_coste_llamada(3, 20))
+# Ejercicio 16: coste_llamada(...)
+print(f"Coste Llamada (12min, Domingo, Tarde): {modulo_alvaro.coste_llamada(12, 'S', 'T'):.2f}€")
 
-print("Ejercicio 20")
+# Ejercicio 18: dia_escrito(n)
+print(f"Día 4: {modulo_alvaro.dia_escrito(4)}")
 
-print("Coste Transporte (550g, Zona 1):", modulo_alvaro.calcula_coste_transporte(550, 1))
-print("Coste Transporte (1000g, Zona 4):", modulo_alvaro.calcula_coste_transporte(1000, 4))
+# Ejercicio 19: num_dias_mes(mes)
+print(f"Días de febrero (2024): {modulo_alvaro.num_dias_mes(2, 2024)}")
 
+# Ejercicio 20: calcula_coste_transporte(peso, zona)
+print(f"Coste Transporte (2500g, Zona 3): {modulo_alvaro.calcula_coste_transporte(2500, 3):.2f}€")
 
-print("\n--- Bucles ---")
+print("\n" + "="*40 + "\n")
 
-print("Factorial de 5:", modulo_alvaro.factorial(5))
+# --- PRUEBAS DE FUNCIONES CON BUCLES ---
+print("--- PRUEBAS DE BUCLES ---")
 
-print("Pares entre 5 y 15 (Imprime):")
-modulo_alvaro.pares_entre(5, 15)
+# Ejercicio 1: factorial(num)
+print(f"Factorial de 5: {modulo_alvaro.factorial(5)}")
 
-print("Tabla de multiplicar del 7 (Imprime):")
+# Ejercicio 5: pares_entre(num1, num2) (Imprime)
+print("Pares entre 10 y 20:")
+modulo_alvaro.pares_entre(10, 20)
+
+# Ejercicio 6: tabla_multiplicar(n) (Imprime)
+print("Tabla de multiplicar del 7:")
 modulo_alvaro.tabla_multiplicar(7)
 
-print("7 es primo:", modulo_alvaro.es_primo(7))
-print("10 es primo:", modulo_alvaro.es_primo(10))
+# Ejercicio 10: adivina_numero(intentos)
+# Este ejercicio es interactivo, se comenta para ejecución automática
+# print("Juego Adivina Número (3 intentos):")
+# modulo_alvaro.adivina_numero(3)
 
-print("Adivina Número (Interactivo - 3 intentos):")
-modulo_alvaro.adivina_numero(3)
+# Ejercicio 11: es_primo(n)
+print(f"¿Es 17 primo? {modulo_alvaro.es_primo(17)}")
+print(f"¿Es 15 primo? {modulo_alvaro.es_primo(15)}")
 
-print("\nPrimeros 5 números primos (Imprime):")
-modulo_alvaro.primeros_primos(5)
+# Ejercicio 20: primeros_primos(N) (Imprime)
+print("Los 10 primeros números primos:")
+modulo_alvaro.primeros_primos(10)
