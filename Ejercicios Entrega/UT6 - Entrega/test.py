@@ -2,26 +2,40 @@ import modulo_alvaro
 
 print("--- Condicionales ---")
 
-print("Mayor (10, 5):", modulo_alvaro.mayor(10, 5))
-print("Mayor (10, 20):", modulo_alvaro.mayor(10, 20))
+print("Ejercicio 1")
 
-print("Es Par (4):", modulo_alvaro.es_par(4))
-print("Es Par (7):", modulo_alvaro.es_par(7))
+print("El número 10 es mayor que el 5", modulo_alvaro.mayor(10, 5))
+print("El número 20 es mayor que el 10:", modulo_alvaro.mayor(10, 20))
 
-print("Es Mayúsculas ('HOLA'):", modulo_alvaro.es_mayusculas("HOLA"))
-print("Es Mayúsculas ('Hola'):", modulo_alvaro.es_mayusculas("Hola"))
+print("Ejercicio 3")
+
+print("El número 4 es par", modulo_alvaro.es_par(4))
+print("El número 7 no es par:", modulo_alvaro.es_par(7))
+
+print("Ejercicio 6")
+
+print("'HOLA' está en mayúsculas", modulo_alvaro.es_mayusculas("HOLA"))
+print("'Hola' no está en mayúsculas", modulo_alvaro.es_mayusculas("Hola"))
+
+print("Ejercicio 18")
 
 print("Día Escrito (3):", modulo_alvaro.dia_escrito(3))
 print("Día Escrito (7):", modulo_alvaro.dia_escrito(7))
 print("Día Escrito (8):", modulo_alvaro.dia_escrito(8))
+
+print("Ejercicio 19")
 
 print("Días del Mes (2, 4, 1):")
 print(modulo_alvaro.num_dias_mes(2))
 print(modulo_alvaro.num_dias_mes(4))
 print(modulo_alvaro.num_dias_mes(1))
 
+print("Ejercicio 16")
+
 print("Coste Llamada (Tipo 1, 10 min):", modulo_alvaro.calcula_coste_llamada(1, 10))
 print("Coste Llamada (Tipo 3, 20 min):", modulo_alvaro.calcula_coste_llamada(3, 20))
+
+print("Ejercicio 20")
 
 print("Coste Transporte (550g, Zona 1):", modulo_alvaro.calcula_coste_transporte(550, 1))
 print("Coste Transporte (1000g, Zona 4):", modulo_alvaro.calcula_coste_transporte(1000, 4))
