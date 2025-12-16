@@ -22,7 +22,7 @@ def potencia(base, exp):
         for _ in range(exp):
             resultado *= base
         return resultado
-    else: # exp < 0
+    else:
         resultado = 1
         for _ in range(abs(exp)):
             resultado *= base
@@ -70,7 +70,7 @@ def es_fecha_correcta(dia, mes, anyo):
     if not 1 <= mes <= 12 or not 1 <= dia <= 31:
         return False
 
-    dias_en_mes = num_dias_mes(mes, anyo) # Reutilizamos la lógica de días
+    dias_en_mes = num_dias_mes(mes, anyo)
     return dia <= dias_en_mes
 
 def calcula_ganancias_uva(precio_kilo, kilos, tipo, tamanyo):
@@ -100,7 +100,7 @@ def costes_viaje(n):
     elif n >= 30:
         coste_total_bus = 95
         coste_total_bus *= n
-    else: # n < 30
+    else:
         coste_total_bus = 4000 / n
         coste_total_bus *= 30
 
@@ -110,7 +110,6 @@ def costes_viaje(n):
 def coste_llamada(tiempo, es_domingo, turno):
     coste = 0.0
 
-    # Primeros 3 minutos
     if tiempo <= 3:
         coste += 3.00
         minutos_extra = 0
@@ -118,7 +117,6 @@ def coste_llamada(tiempo, es_domingo, turno):
         coste += 3.00
         minutos_extra = tiempo - 3
 
-    # Minutos extra
     if minutos_extra > 0:
         if tiempo <= 5:
             coste += minutos_extra * 0.50
@@ -126,18 +124,16 @@ def coste_llamada(tiempo, es_domingo, turno):
             coste += minutos_extra * 0.40
         elif tiempo <= 10:
             coste += minutos_extra * 0.30
-        else: # tiempo > 10
+        else:
             coste += minutos_extra * 0.20
 
-    # Turno
     if turno.upper() == 'M':
-        coste *= 1.15 # Incremento del 15%
+        coste *= 1.15
     elif turno.upper() == 'T':
-        coste *= 1.10 # Incremento del 10%
+        coste *= 1.10
 
-    # Domingo
     if es_domingo.upper() == 'S':
-        coste *= 1.03 # Incremento del 3%
+        coste *= 1.03
 
     return coste
 
@@ -153,7 +149,7 @@ def dia_escrito(n):
     }
     return dias.get(n, "Número de día inválido")
 
-def num_dias_mes(mes, anyo=2024): # anyo por defecto para bisiesto en la fecha correcta
+def num_dias_mes(mes, anyo=2024):
     if mes in (4, 6, 9, 11):
         return 30
     elif mes == 2:
@@ -198,7 +194,7 @@ def pares_entre(num1, num2):
     for n in range(num1, num2 + 1):
         if n % 2 == 0:
             print(n, end=" ")
-    print() # Para salto de línea al final
+    print()
 
 def tabla_multiplicar(n):
     for i in range(1, 11):
