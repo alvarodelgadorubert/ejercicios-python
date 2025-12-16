@@ -245,4 +245,4 @@ def primeros_primos(N):
             print(num, end=" ")
             primos_encontrados += 1
         num += 1
-    print() # Para salto de línea al final
+    print()

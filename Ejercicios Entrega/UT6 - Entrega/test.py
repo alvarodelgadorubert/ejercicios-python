@@ -105,6 +105,6 @@ print(f"¿Es 17 primo? {modulo_alvaro.es_primo(17)}")
 print(f"¿Es 15 primo? {modulo_alvaro.es_primo(15)}")
 
 # Ejercicio 20: primeros_primos
-print("\n[Ejercicio 20]")
+print("Ejercicio 20")
 print("Los 10 primeros números primos:")
 modulo_alvaro.primeros_primos(10)
