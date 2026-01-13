@@ -1,5 +1,11 @@
-original = ["a", "b", "c", "d"]
-inversa = original[::-1]
+import random
 
-print(f"Original: {original}")
-print(f"Inversa: {inversa}")
+original: list[int] = []
+
+for _ in range(10):
+    original.append(random.randint(1, 100))
+
+ordenada: list[int] = sorted(original)
+
+print(f"Lista original: {original}")
+print(f"Lista ordenada: {ordenada}")

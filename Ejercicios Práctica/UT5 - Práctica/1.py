@@ -1,9 +1,9 @@
-nombres = ["Ana", "Benja", "Carlos", "Dario"]
-print(f"Lista inicial: {nombres}")
+import random
 
-nombres.append("Elena")
-nombres.insert(1, "Fernando")
-nombres.pop(2)
+lista_numeros: list[int] = [0] * 10
 
-print(f"La lista tiene {len(nombres)} elementos.")
-print(f"Lista final: {nombres}")
+for i in range(len(lista_numeros)):
+    lista_numeros[i] = random.randint(1, 10)
+
+for num in lista_numeros:
+    print(f"Número: {num}, Cuadrado: {num**2}, Cubo: {num**3}")
