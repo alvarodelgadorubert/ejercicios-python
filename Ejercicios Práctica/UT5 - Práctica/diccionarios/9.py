@@ -7,3 +7,5 @@ for i in range(5):
         contador[p] = contador.get(p, 0) + 1
 
 print(contador)
+
+# este tipo de diccionario es el que saldrá en el examen
